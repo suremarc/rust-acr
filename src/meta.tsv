@@ -1,0 +1,25 @@
+header	name
+table	table
+table	field
+table	template
+table	xref
+
+header	path
+field	table.name
+field	field.path
+field	field.table
+field	field.ident
+field	template.field
+field	template.pattern
+field	template.separator
+field	xref.field
+field	xref.table
+
+header	field	pattern	separator
+template	field.path	table.ident	.
+
+header	field	table
+xref	field.table	table
+xref	template.field	field
+xref	xref.field	field
+xref	xref.table	table
